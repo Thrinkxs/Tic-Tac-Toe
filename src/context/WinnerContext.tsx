@@ -11,7 +11,16 @@ type WinnerContextValue = {
   setPlayer2Score: React.Dispatch<React.SetStateAction<number>>;
 };
 
-const WinnerContext = createContext<WinnerContextValue>({});
+const WinnerContext = createContext<WinnerContextValue>({
+  player1: "",
+  setPlayer1: () => {},
+  player2: "",
+  setPlayer2: () => {},
+  player1Score: 0,
+  setPlayer1Score: () => {},
+  player2Score: 0,
+  setPlayer2Score: () => {},
+});
 
 type Props = {
   children: ReactNode;
