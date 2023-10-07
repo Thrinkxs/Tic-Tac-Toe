@@ -1,6 +1,18 @@
 import { ReactNode, createContext, useContext, useState } from "react";
 
-const WinnerContext = createContext({});
+type WinnerContextValue = {
+  player1: string;
+  setPlayer1: React.Dispatch<React.SetStateAction<string>>;
+  player2: string;
+  setPlayer2: React.Dispatch<React.SetStateAction<string>>;
+  player1Score: number;
+  setPlayer1Score: React.Dispatch<React.SetStateAction<number>>;
+  player2Score: number;
+  setPlayer2Score: React.Dispatch<React.SetStateAction<number>>;
+};
+
+const WinnerContext = createContext<WinnerContextValue>({});
+
 type Props = {
   children: ReactNode;
 };

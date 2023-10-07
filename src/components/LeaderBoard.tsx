@@ -1,24 +1,7 @@
-import React from "react";
 import { useWinnerContext } from "../context/WinnerContext";
 
-type LeaderProps = {
-  player1: string;
-  player2: string;
-  player1Score: number;
-  player2Score: number;
-};
-
 const LeaderBoard = () => {
-  const {
-    player1,
-    setPlayer1,
-    player2,
-    setPlayer2,
-    player1Score,
-    setPlayer1Score,
-    player2Score,
-    setPlayer2Score,
-  } = useWinnerContext();
+  const { player1, player2, player1Score, player2Score } = useWinnerContext();
 
   const players = [
     { playerName: player1, score: player1Score },

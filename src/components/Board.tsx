@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Square from "./Square";
-import LeaderBoard from "./LeaderBoard";
+
 import { useWinnerContext } from "../context/WinnerContext";
 
 const Board = () => {
@@ -62,7 +62,7 @@ const Board = () => {
   }, [player1, player2, player1Score, player2Score]);
 
   //handle gameplay
-  const handleClick = (i) => {
+  const handleClick = (i: number) => {
     const squares = [...board];
     if (squares[i] || calculateWinner(squares)) return;
     squares[i] = xIsNext ? "X" : "O";
@@ -77,7 +77,7 @@ const Board = () => {
   };
 
   //find winner
-  const calculateWinner = (squares) => {
+  const calculateWinner = (squares: Array<string | null>) => {
     const lines = [
       [0, 1, 2],
       [3, 4, 5],
@@ -97,8 +97,8 @@ const Board = () => {
         squares[a] === squares[b] &&
         squares[a] === squares[c]
       ) {
-        setWinner(squares[a]);
-        return squares[a];
+        setWinner(squares[a]!);
+        return squares[a]!;
       }
     }
     if (!squares.includes(null)) {
@@ -119,7 +119,7 @@ const Board = () => {
   const handleRestart = () => {
     setXIsNext(true);
     setBoard(Array(9).fill(null));
-    setWinner(null);
+    setWinner("");
   };
 
   //set player names

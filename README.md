@@ -58,4 +58,4 @@ React - JavaScript library for building user interfaces.
 
 # Author
 
-[Emmanuel Omokhegbe aka Thrinkxs](https://github.com/Thrinkxs)
+[Thrinkxs](https://github.com/Thrinkxs)
