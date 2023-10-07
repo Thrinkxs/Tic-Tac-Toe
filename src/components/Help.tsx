@@ -8,9 +8,7 @@ import {
   ModalCloseButton,
   Button,
   useDisclosure,
-  List,
   ListItem,
-  ListIcon,
   OrderedList,
   UnorderedList,
 } from "@chakra-ui/react";
