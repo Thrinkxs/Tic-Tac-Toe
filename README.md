@@ -27,5 +27,35 @@ Follow these instructions to get a copy of the project up and running on your lo
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/tic-tac-toe.git
+   git clone https://github.com/Thrinkxs/Tic-Tac-Toe.git
    ```
+
+2. Navigate to project directory:
+   cd tic-tac-toe
+3. Install dependencies using `npm install`
+
+4. Usage:
+   i. start dev server: npm run dev
+   ii. Open your web browser and navigate to http://localhost:5173 to play the game.
+   iii. Enter the names of Player 1 and Player 2.
+   iv. Enjoy the game
+
+# Leaderboard
+
+The leaderboard displays the names and scores of Player 1 and Player 2.
+
+# Restarting the Game
+
+Click the "Restart Game" button to start a new game without changing players' names and scores.
+
+# Quitting the Game
+
+Click the "Quit Game" button to clear player names and scores. This action cannot be undone.
+
+# Built With
+
+React - JavaScript library for building user interfaces.
+
+# Author
+
+[Emmanuel Omokhegbe aka Thrinkxs](https://github.com/Thrinkxs)
