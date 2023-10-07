@@ -12,7 +12,7 @@ This is a simple web-based Tic-Tac-Toe game developed using React. It allows two
 
 ## Demo
 
-You can play a live demo of the game [here](#insert-live-demo-link-here).
+You can play a live demo of the game [here](https://celadon-sunburst-ec7759.netlify.app/).
 
 ## Getting Started
 
